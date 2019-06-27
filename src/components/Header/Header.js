@@ -10,26 +10,33 @@ class Header extends Component {
     return (
       <div className="header">
 
+          
           <div id='header-container'>
-                <img src={ logo } id='jamba-logo' alt='jamba logo' />
-
+            <img src={ logo } id='jamba-logo' alt='jamba logo' />
+            
+            <div id='header-container-inner'>
                 <div id='header-items'>
                     <p>menu</p>
                     <p>about</p>
+                    <p>app</p>
                     <div id='extra-icons-menu-items'>
                         <p>franchising</p>
-                        <img src={thirdParty} id='third-party-icon' alt='arrow icon'/>
+                        <img src={thirdParty} className='third-party-icon' alt='arrow icon'/>
                     </div>
                     <p>delivery</p>
                     <div id='extra-icons-menu-items'>
                         <img src={locations} alt='locations icon' />
                         <p>locations</p>
-                        <img src={thirdParty} id='third-party-icon' alt='arrow icon' />
+                        <img src={ thirdParty } className='third-party-icon' alt='arrow icon' />
                     </div>
                 </div>
+            
                 <div id='order-bttn'>
-                    <img src={order} id='third-party-icon' alt='arrow icon' />
+                    <img src={order} id='order-bttn-icon'/>
+                    <p>order now</p>
+                    <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />
                 </div>
+            </div>
 
             {/* <div id='gift-rewards-container'>
               <div id='gift-cards'>
