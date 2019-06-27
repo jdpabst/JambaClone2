@@ -6,14 +6,25 @@ import './Header.css';
 class Header extends Component {
 
   render() {
-      let { logo, order, locations, thirdParty } = this.props;
+      let { logo, order, locations, thirdParty, giftCard, rewardsIcon } = this.props;
     return (
       <div className="header">
 
           
           <div id='header-container'>
             <img src={ logo } id='jamba-logo' alt='jamba logo' />
-            
+
+            <div id='gift-rewards-container'>
+              <div id='gift-cards' className='display-flex'>
+                <img src={giftCard} className='extra-styling-icons' alt='gift card' />
+                <p className='nunito-font'>gift cards</p>
+              </div>
+              <div id='rewards' className='display-flex'>
+                <img src={rewardsIcon} className='extra-styling-icons' alt='rewards' />
+                <p className='nunito-font'>rewards</p>
+              </div>
+            </div>
+
             <div id='header-container-inner'>
                 <div id='header-items'>
                     <p>menu</p>
@@ -37,17 +48,6 @@ class Header extends Component {
                     <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />
                 </div>
             </div>
-
-            {/* <div id='gift-rewards-container'>
-              <div id='gift-cards'>
-                <img src='' alt='gift card' />
-                <p>gift cards</p>
-              </div>
-              <div id='rewards'>
-                <img src='' alt='rewards' />
-                <p>rewards</p>
-              </div>
-            </div> */}
           </div>
 
           {/* <div id='mobile-header'>

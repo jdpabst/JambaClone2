@@ -1,10 +1,8 @@
 .header{
     width: 100vw;
     position: relative;
-    height: 155px;
+    height: 150px;
 }
-
-
 
 #header-container{
     height: 100%;
@@ -15,15 +13,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid coral; */
+    position: relative;
+}
+
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header-container-inner{
-    /* border: 1px solid black; */
     width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    position: relative;
 }
 
 #header-items{
@@ -33,11 +38,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 #header-items p{
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    color: #212529
 }
 
 .third-party-icon{
@@ -60,6 +65,7 @@
     width: 110px;
     position: relative;
 }
+
 #order-bttn p{
     width: 50%;
     position: absolute;
@@ -83,4 +89,61 @@
     position: absolute;
     top: 30px;
     right: 20px;
+}
+
+#gift-rewards-container{
+    height: auto;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 12.5px;
+    color: #212529
+}
+
+.nunito-font{
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.extra-styling-icons{
+    height: 17px;
+    width: 17px;
+}
+
+#gift-cards{
+    width: 80px;
+}
+#rewards{
+    width: 70px;
+}
+
+@media only screen and (min-width: 1160px) {
+    #order-bttn{
+        height: 25px;
+        width: 145px;
+    }
+    
+    #order-bttn p{
+        width: 80%;
+        top: 12px;
+        left: 17px;
+    }
+    
+    #order-bttn-icon{
+        height: 45px;
+        width: 145px;
+    }
+    
+    #order-third-party-icon{
+        position: absolute;
+        top: 18px;
+        right: 18px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    /* put larger screen as showing here and make mobile screen stuff unavailable */
 }
