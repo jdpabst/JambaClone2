@@ -11,7 +11,7 @@ class Header extends Component {
       <div className="header">
 
           
-          <div id='header-container'>
+          <div id='desktop-header-container'>
             <img src={ logo } id='jamba-logo' alt='jamba logo' />
 
             <div id='gift-rewards-container'>
@@ -43,23 +43,24 @@ class Header extends Component {
                 </div>
             
                 <div id='order-bttn'>
-                    <img src={order} id='order-bttn-icon'/>
+                    <img src={order} className='order-bttn-icon'/>
                     <p>order now</p>
                     <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />
                 </div>
             </div>
           </div>
 
-          {/* <div id='mobile-header'>
+          <div id='mobile-header'>
             <div id='mobile-upper-header'>
               <div id='order-bttn'>
-                <p>order now</p> 
-                <img src='' alt='arrow icon' />
+                <img src={order} className='order-bttn-icon'/>
+                <p>order now</p>
+                <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />
               </div>
               <img src='' id='jamba-logo' alt='jamba logo' />
-              <div id='mobile-dropdown-menu'> */}
+              <div id='mobile-dropdown-menu'>
                 {/* use animations to bring in the menu */}
-              {/* </div>
+              </div>
             </div>
             <div id='mobile-lower-header'>
               <div id='locations'>
@@ -69,7 +70,7 @@ class Header extends Component {
               </div>
               <p>menu</p>
             </div>
-          </div> */}
+          </div>
 
       </div>
     );

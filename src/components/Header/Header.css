@@ -4,7 +4,7 @@
     height: 150px;
 }
 
-#header-container{
+#desktop-header-container{
     height: 100%;
     max-width: 1650px;
     min-width: 915px;
@@ -14,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    display: none;
 }
 
 .display-flex{
@@ -77,7 +78,7 @@
     color: #2b3936;
 }
 
-#order-bttn-icon{
+.order-bttn-icon{
     height: 75px;
     width: 120px;
     position: absolute;
