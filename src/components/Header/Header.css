@@ -9,7 +9,6 @@
     max-width: 1650px;
     min-width: 915px;
     margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -61,36 +60,7 @@
     align-items: center;
 }
 
-#order-bttn{
-    height: 75px;
-    width: 110px;
-    position: relative;
-}
 
-#order-bttn p{
-    width: 50%;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 23.94px;
-    color: #2b3936;
-}
-
-.order-bttn-icon{
-    height: 75px;
-    width: 120px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#order-third-party-icon{
-    position: absolute;
-    top: 30px;
-    right: 20px;
-}
 
 #gift-rewards-container{
     height: auto;
@@ -121,6 +91,107 @@
     width: 70px;
 }
 
+
+
+/* MOBILE  */
+#mobile-header{
+    width: 100vw;
+    height: auto;
+    
+}
+
+#mobile-upper-header{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    box-shadow: rgb(192, 217, 212) 0px 1px 3px 0px;
+    padding: 0 20px;
+}
+
+#mobile-dropdown-menu{
+    height: auto;
+    width: 40px;
+    justify-content: flex-end;
+}
+.mobile-menu-icon{
+    height: 7px;
+    width: auto;
+    margin: 3px 0;
+}
+
+#order-bttn{
+    height: 55px;
+    width: 40px;
+    position: relative;
+}
+
+#order-bttn p{
+    width: 50%;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #2b3936;
+}
+
+.order-bttn-icon{
+    height: 55px;
+    width: 82px;
+}
+
+#order-third-party-icon{
+    position: absolute;
+    top: 22px;
+    right: -30px;
+}
+
+#mobile-lower-header{
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: #2b3936;
+    background: rgba(192, 217, 212, .3);
+    box-shadow: rgba(33, 37, 41, 0.2) 0px 4px 5px 0px;
+}
+
+
+@media only screen and (min-width: 920px) {
+    #mobile-header{
+        display: none;
+    }
+
+    #desktop-header-container{
+        display: flex;
+    }
+
+    #order-bttn{
+        height: 75px;
+        width: 110px;
+    }
+    
+    #order-bttn p{
+        top: 15px;
+        font-size: 20px;
+        line-height: 23.94px;
+    }
+    
+    .order-bttn-icon{
+        height: 75px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    #order-third-party-icon{
+        top: 30px;
+        right: 20px;
+    }
+}
+
 @media only screen and (min-width: 1160px) {
     #order-bttn{
         height: 25px;
@@ -133,7 +204,7 @@
         left: 17px;
     }
     
-    #order-bttn-icon{
+    .order-bttn-icon{
         height: 45px;
         width: 145px;
     }
@@ -143,8 +214,4 @@
         top: 18px;
         right: 18px;
     }
-}
-
-@media only screen and (min-width: 920px) {
-    /* put larger screen as showing here and make mobile screen stuff unavailable */
 }

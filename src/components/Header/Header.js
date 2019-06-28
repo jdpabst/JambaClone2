@@ -6,7 +6,7 @@ import './Header.css';
 class Header extends Component {
 
   render() {
-      let { logo, order, locations, thirdParty, giftCard, rewardsIcon } = this.props;
+      let { logo, order, locations, mobileLogo, thirdParty, giftCard, rewardsIcon, mobileMenuIcon1, mobileMenuIcon2, mobileMenuIcon3 } = this.props;
     return (
       <div className="header">
 
@@ -51,24 +51,26 @@ class Header extends Component {
           </div>
 
           <div id='mobile-header'>
-            <div id='mobile-upper-header'>
+            <div id='mobile-upper-header' className='display-flex'>
               <div id='order-bttn'>
                 <img src={order} className='order-bttn-icon'/>
                 <p>order now</p>
                 <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />
               </div>
-              <img src='' id='jamba-logo' alt='jamba logo' />
-              <div id='mobile-dropdown-menu'>
-                {/* use animations to bring in the menu */}
+              <img src={ mobileLogo } id='jamba-logo' alt='jamba logo' />
+              <div id='mobile-dropdown-menu' className='display-flex'>
+                <img src={ mobileMenuIcon1 } alt='mobile menu' className='mobile-menu-icon' />
+                <img src={ mobileMenuIcon2 } alt='mobile menu' className='mobile-menu-icon' />
+                <img src={ mobileMenuIcon3 } alt='mobile menu' className='mobile-menu-icon' />
               </div>
             </div>
-            <div id='mobile-lower-header'>
-              <div id='locations'>
-                <img src='' alt='locations icons' />
-                <p>locations</p>
-                <img src='' alt='arrow icon' />
+            <div id='mobile-lower-header' className='display-flex'>
+              <div id='extra-icons-menu-items'>
+                <img src={locations} alt='locations icon' />
+                <p className='nunito-font'>locations</p>
+                <img src={ thirdParty } className='third-party-icon' alt='arrow icon' />
               </div>
-              <p>menu</p>
+              <p className='nunito-font'>menu</p>
             </div>
           </div>
 
