@@ -1,7 +1,7 @@
 .header{
     width: 100vw;
     position: relative;
-    height: 150px;
+    height: auto;
 }
 
 #desktop-header-container{
@@ -52,7 +52,7 @@
 }
 
 #extra-icons-menu-items{
-    width: 95px;
+    width: 102px;
     height: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@
     top: 5px;
     right: 0;
     font-size: 12.5px;
-    color: #212529
+    color: #212529;
 }
 
 .nunito-font{
@@ -97,7 +97,6 @@
 #mobile-header{
     width: 100vw;
     height: auto;
-    
 }
 
 #mobile-upper-header{
@@ -148,7 +147,7 @@
 }
 
 #mobile-lower-header{
-    height: 50px;
+    height: 60px;
     width: 100%;
     justify-content: space-between;
     padding: 0 30px;
@@ -190,6 +189,18 @@
         top: 30px;
         right: 20px;
     }
+
+    /* #rewards{
+        display: none;
+    } */
+
+    #gift-rewards-container{
+        width: 150px;
+    }
+
+    .header{
+        height: 150px;
+    }
 }
 
 @media only screen and (min-width: 1160px) {
@@ -213,5 +224,16 @@
         position: absolute;
         top: 18px;
         right: 18px;
+    }
+    /* #rewards{
+        display: flex;
+    } */
+
+    #gift-rewards-container{
+        width: 185px;
+    }
+
+    .header{
+        height: 125px;
     }
 }

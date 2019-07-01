@@ -12,18 +12,19 @@ class Header extends Component {
 
           
           <div id='desktop-header-container'>
-            <img src={ logo } id='jamba-logo' alt='jamba logo' />
 
-            <div id='gift-rewards-container'>
+          <div id='gift-rewards-container'>
               <div id='gift-cards' className='display-flex'>
                 <img src={giftCard} className='extra-styling-icons' alt='gift card' />
                 <p className='nunito-font'>gift cards</p>
               </div>
-              <div id='rewards' className='display-flex'>
+              {/* <div id='rewards' className='display-flex'>
                 <img src={rewardsIcon} className='extra-styling-icons' alt='rewards' />
                 <p className='nunito-font'>rewards</p>
-              </div>
-            </div>
+              </div> */}
+          </div>
+            
+            <img src={ logo } id='jamba-logo' alt='jamba logo' />
 
             <div id='header-container-inner'>
                 <div id='header-items'>
