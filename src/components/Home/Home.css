@@ -16,10 +16,10 @@
 #refresh-refuel{
     background-color: white;
     width: 100vw;
-    height: 450px;
+    height: 600px;
     position: relative;
     color: #2b3936;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 #refresh-refuel-cta{
@@ -80,22 +80,39 @@
     align-items: center;
     position: absolute;
     left: calc(50% - 95px);
-    bottom: 90px;
+    bottom: 240px;
 }
 
 #orange-dotted-underline{
     height: auto;
     width: 340px;
     position: absolute;
-    bottom: 55px;
+    bottom: 205px;
     left: calc(50% - 170px);
 }
 
+
+
 #menu-items-carousel{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     height: 150px;
-    border: 1px solid black;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+#carousel-container{
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 0 40px;
+}
+
+.flex-children-margin{
+    margin-right: 100px;
 }
 
 .girlNextDoorFont{

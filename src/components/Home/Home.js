@@ -22,7 +22,6 @@ import bitesTrans from '../../assets/bites-transparent.png';
 import bitesFill from '../../assets/bites-filled.png';
 import kidsTrans from '../../assets/kids-transparent.png';
 import kidsFill from '../../assets/kids-filled.png';
-import { Carousel } from 'react-responsive-carousel';
 import Header from '../Header/Header';
 
 
@@ -66,36 +65,34 @@ class Home extends Component {
               </div>
               <img src={underline} id='orange-dotted-underline'/>
 
-              
-                <Carousel>
-                  <div>
-                    <img src= {smoothieTrans } alt='smoothies' />
+              <div id='carousel-container'>
+                <div id='menu-items-carousel' className='display-flex'>
+                  <div className='flex-children-margin'>
+                    <img src= { smoothieTrans } alt='smoothies' />
                     <p>smoothies</p>
                   </div>
-                  <div>
+                  <div className='flex-children-margin'>
                     <img src={ bowlTrans } alt='bowls' />
                     <p>bowls</p>
                   </div>
-                  <div>
+                  <div className='flex-children-margin'>
                     <img src={ shotsTrans } alt='shots' />
                     <p>shots</p>
                   </div>
-                  <div>
+                  <div className='flex-children-margin'>
                     <img src={ juicesTrans } alt='juices' />
                     <p>juices</p>
                   </div>
-                  <div>
+                  <div className='flex-children-margin'>
                     <img src={ bitesTrans } alt='bites' />
                     <p>bites</p>
                   </div>
-                  <div>
+                  <div className='flex-children-margin'>
                     <img src={ kidsTrans } alt='kids' />
                     <p>kids</p>
                   </div>
-                </Carousel>
-              
-              
-              <div id='menu-items'></div>
+                </div>
+              </div>
             </div>
           </div>
 
