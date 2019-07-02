@@ -19,7 +19,7 @@
     height: 450px;
     position: relative;
     color: #2b3936;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #refresh-refuel-cta{
@@ -89,6 +89,13 @@
     position: absolute;
     bottom: 55px;
     left: calc(50% - 170px);
+}
+
+#menu-items-carousel{
+    width: 95%;
+    margin: 0 auto;
+    height: 150px;
+    border: 1px solid black;
 }
 
 .girlNextDoorFont{

@@ -53,7 +53,7 @@ class Header extends Component {
 
           <div id='mobile-header'>
             <div id='mobile-upper-header' className='display-flex'>
-              <div id='order-bttn'>
+              <div id='order-bttn' className='nunito-font'>
                 <img src={order} className='order-bttn-icon'/>
                 <p>order now</p>
                 <img src={ thirdParty } className='third-party-icon' id='order-third-party-icon' alt='arrow icon' />

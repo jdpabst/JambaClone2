@@ -10,12 +10,33 @@ import mobileMenuIcon1 from '../../assets/asset 19.png';
 import mobileMenuIcon2 from '../../assets/asset 20.png';
 import mobileMenuIcon3 from '../../assets/asset 21.png';
 import underline from '../../assets/underline.png';
-import Header from '../Header/Header'
+import smoothieTrans from '../../assets/smoothie-transparent.png';
+import smoothieFill from '../../assets/smoothie-filled.png';
+import bowlTrans from '../../assets/bowl-transparent.png';
+import bowlFill from '../../assets/bowl-filled.png'
+import shotsTrans from '../../assets/shots-transparent.png';
+import shotsFill from '../../assets/shots-filled.png'
+import juicesTrans from '../../assets/juices-transparent.png';
+import juicesFill from '../../assets/juices-filled.png';
+import bitesTrans from '../../assets/bites-transparent.png';
+import bitesFill from '../../assets/bites-filled.png';
+import kidsTrans from '../../assets/kids-transparent.png';
+import kidsFill from '../../assets/kids-filled.png';
+import { Carousel } from 'react-responsive-carousel';
+import Header from '../Header/Header';
+
 
 import './Home.css';
 
 
 class Home extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      hover: false
+    }
+  }
   
   render() {
   
@@ -42,9 +63,36 @@ class Home extends Component {
               <div id='our-menu-container' className='line-height-30'>
                 <h1 className='girlNextDoorFont fontSize30'>OUR</h1>
                 <h1 className='fontSize45'>menu</h1>
-                {/* <div id='orange-dotted-underline'></div> */}
               </div>
               <img src={underline} id='orange-dotted-underline'/>
+
+              
+                <Carousel>
+                  <div>
+                    <img src= {smoothieTrans } alt='smoothies' />
+                    <p>smoothies</p>
+                  </div>
+                  <div>
+                    <img src={ bowlTrans } alt='bowls' />
+                    <p>bowls</p>
+                  </div>
+                  <div>
+                    <img src={ shotsTrans } alt='shots' />
+                    <p>shots</p>
+                  </div>
+                  <div>
+                    <img src={ juicesTrans } alt='juices' />
+                    <p>juices</p>
+                  </div>
+                  <div>
+                    <img src={ bitesTrans } alt='bites' />
+                    <p>bites</p>
+                  </div>
+                  <div>
+                    <img src={ kidsTrans } alt='kids' />
+                    <p>kids</p>
+                  </div>
+                </Carousel>
               
               
               <div id='menu-items'></div>
