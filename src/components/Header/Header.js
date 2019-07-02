@@ -26,7 +26,7 @@ class Header extends Component {
             
             <img src={ logo } id='jamba-logo' alt='jamba logo' />
 
-            <div id='header-container-inner'>
+            <div id='header-container-inner'  className='nunito-font'>
                 <div id='header-items'>
                     <p>menu</p>
                     <p>about</p>
