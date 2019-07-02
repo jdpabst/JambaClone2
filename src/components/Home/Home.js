@@ -9,6 +9,7 @@ import rewardsIcon from '../../assets/star.svg';
 import mobileMenuIcon1 from '../../assets/asset 19.png';
 import mobileMenuIcon2 from '../../assets/asset 20.png';
 import mobileMenuIcon3 from '../../assets/asset 21.png';
+import underline from '../../assets/underline.png';
 import Header from '../Header/Header'
 
 import './Home.css';
@@ -41,8 +42,9 @@ class Home extends Component {
               <div id='our-menu-container' className='line-height-30'>
                 <h1 className='girlNextDoorFont fontSize30'>OUR</h1>
                 <h1 className='fontSize45'>menu</h1>
-                <div id='orange-dotted-underline'></div>
+                {/* <div id='orange-dotted-underline'></div> */}
               </div>
+              <img src={underline} id='orange-dotted-underline'/>
               
               
               <div id='menu-items'></div>

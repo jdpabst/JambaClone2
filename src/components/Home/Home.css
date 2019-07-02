@@ -81,14 +81,14 @@
     position: absolute;
     left: calc(50% - 95px);
     bottom: 90px;
-    /* border: 1px solid black; */
 }
 
 #orange-dotted-underline{
-    height: 4px;
-    width: 100%;
-    border-bottom: 2px dotted orange;
-    transform: rotate(2deg)
+    height: auto;
+    width: 340px;
+    position: absolute;
+    bottom: 55px;
+    left: calc(50% - 170px);
 }
 
 .girlNextDoorFont{
